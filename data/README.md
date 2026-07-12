@@ -6,8 +6,7 @@ on offspring life-history traits.
 
 ------------------------------------------------------------------------
 
-Mark D. Pitt, Brendan O’Connor, Timothy D. Sheen, Davide M. Dominoni, Tom Tregenza, Jelle J. Boonekamp
-**Parental age at reproduction accelerates offspring pace of life**. 
+Mark D. Pitt, Brendan O’Connor, Timothy D. Sheen, Davide M. Dominoni, Tom Tregenza, Jelle J. Boonekamp **Parental age at reproduction accelerates offspring pace of life**. 
 *bioRxiv*. [DOI:10.64898/2026.04.14.718189](https://www.biorxiv.org/content/10.64898/2026.04.14.718189v2.full)
 
 ------------------------------------------------------------------------
@@ -25,9 +24,7 @@ The data from this project is contained in three seperate RDS files.
 This sheet contains all the necessary information required to model the following life-history traits in the offspring:
 early-life survival (i.e., first month survival), juvenile survival (i.e., survival from the first month to adulthood), 
 total lifespan (i.e., survival from birth until death), development time (time between birth and adult emergence), adult lifespan (i.e., survival from adult emergence until death), 
-and adult mass (in grams). This data was also used to create the necessary data sheets required for the BaSTA analysis on the offspring's mortality parameters
-(see: 000_ BaSTA_data_organisation.R in scripts). This data sheet also includes the necessary information on the parent's identity and age at the time of mating, 
-alongisde flags indicating which trait analyses individual offspring could be included within.
+and adult mass (in grams). This data was also used to create the data sheets required for the BaSTA analysis on the offspring's mortality parameters(see: 000_ BaSTA_data_organisation.R in scripts). This data sheet also includes additional information on the parent's identity and age at the time of mating, alongisde flags indicating which trait analyses individual offspring could be included within.
 
 #### Key:
 
@@ -43,26 +40,25 @@ alongisde flags indicating which trait analyses individual offspring could be in
 
 -   Column E: **Father_ID** - ID - The unique identifier given to each individual father.
 
--   Column F: **PairID** - ID - The combined unqiue identifier given to a pair of parents.
+-   Column F: **PairID** - ID - The combined unique identifier given to a pair of parents.
 -   All parents were mated with the same partner for the full duration of the study.
 
 -   Column G: **Temp** - Category - The temperature treatment that parent pairs were moved to following their first mating attempt.
 -   Parents' were assigned to be maintained under one of the three following temperature treatments for the full duration of the study: 25.5°C, 28.0°C, or 30.5°C.
 
--   Column H: **Timepoint** - numeric - The unqiue numeric identifer given to each mating attempt.
+-   Column H: **Timepoint** - numeric - The numeric identifer given to each mating attempt.
 -   Parents had up to 8 mating attempts from which we collected and housed offspring to be included in the study.
 
--   Column I: **age_at_mating** - numeric (weeks) - The exact adult age of each individual offspring's mother at the time of laying (in weeks). 
+-   Column I: **age_at_mating** - numeric (weeks) - The exact adult age of each individual offspring's mother at their time of conception (i.e., laying) (recorded in weeks). 
 
 -   Column J: **avg.age** - numeric (weeks) - The average age of the mother across all mating attempts resulting in succesfully hatched eggs (in weeks).
--   A fixed measure of the individual's average age of reproduction that is shared and stable across all offspring in a family. 
+-   A fixed measure of the mother's average age of reproduction that is shared and stable across all offspring in a family. 
 
 -   Column K: **within_subject_age** - numeric (weeks) - the mother's Δage at reproduction when the offspring was conceived, reflecting the parents actual age at mating (relative to their mean age).
 -   This value was calculated by taking the following: **age_at_mating - avg.age**.
 -   This value varies across offspring within individual families depending on the age of the mother at the time of laying.
 
--   Column L: **cum_successful_matings** - numeric - The number of succesful mating attempts (i.e., those matings that resulted in successfully hatched eggs)
--   the parent had undertaken at the point an individual offspring was conceived. This variable was included in an attempt to disentangle accumulated reproductive effort from Δage.
+-   Column L: **cum_successful_matings** - numeric - The number of succesful mating attempts (i.e., those matings that resulted in successfully hatched eggs) that the parent had undertaken when the individual offspring was conceived. This variable was included in an attempt to disentangle accumulated reproductive effort from Δage.
 
 -   Column M: **F1_hatch** - date (yyyy-mm-dd) - The date that the individual offspring hatched.
 
@@ -72,7 +68,7 @@ alongisde flags indicating which trait analyses individual offspring could be in
 
 -   Column O: **F1_sex** - M/F - The sex of the individual offspring. Either Male (M), Female (F), or NA if the offspring died before adulthood.
 
--   Column P: **F1_death_date** - date(yyyy-mm-dd)- The date when the individual offspring was observed as dead. 
+-   Column P: **F1_death_date** - date(yyyy-mm-dd)- The date when the individual offspring was observed dead. 
 
 -   Column Q: **F1_adultmass** - grams - The weight of the offspring (in grams), measured at least 24 hours after we first observed adult emegrence. 
 -   Given a value of NA if the offspring died before reaching adulthood.
@@ -103,4 +99,4 @@ alongisde flags indicating which trait analyses individual offspring could be in
 
 -   Column BB: **mothers_age_at_entry** - numeric  (in weeks) - The exact age of the mother at the **first** mating attempt (i.e., timepoint 1).
 
--   Column BC: **succesful_mate_count** - numeric- The total number of matings that the offspring's parents succesfully undertook over their full life course.
+-   Column BC: **succesful_mate_count** - numeric- The total number of matings that the offspring's parents succesfully undertook over their full life course (i.e., the total number of matings resulting in succesfully hatched eggs).
