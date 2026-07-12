@@ -21,10 +21,12 @@ The data from this project is contained in three seperate RDS files.
 
 ### RDS FILE 1: F1_filtered_data06022025.RDS
 
-This sheet contains all the necessary information required to model the following offspring life-history traits:
+The spreadsheet contains life-history data from 1317 offspring from 78 parent pairs.
+
+This RDS file contains all the necessary information to model the following offspring life-history traits:
 early-life survival (i.e., first month survival), juvenile survival (i.e., survival from the first month to adulthood), 
 total lifespan (i.e., survival from birth until death), development time (time between birth and adult emergence), adult lifespan (i.e., survival from adult emergence until death), 
-and adult mass (in grams). This data was also used to create the data sheets required for the BaSTA analysis on the offspring's mortality parameters (see: 000_ BaSTA_data_organisation.R in scripts).
+and adult mass (in grams). This file was also used to create the data sheets required for the BaSTA analysis on the offspring's mortality parameters (see: 000_ BaSTA_data_organisation.R in scripts).
 
 #### Key:
 
@@ -100,3 +102,69 @@ and adult mass (in grams). This data was also used to create the data sheets req
 -   Column BB: **mothers_age_at_entry** - numeric  (in weeks) - The exact age of the mother at the **first** mating attempt (i.e., timepoint 1).
 
 -   Column BC: **succesful_mate_count** - numeric- The total number of matings that the offspring's parents succesfully undertook over their full life course (i.e., the total number of matings resulting in succesfully hatched eggs).
+
+------------------------------------------------------------------------
+
+### RDS FILE 2: F1_Fecundity_16092025.RDS
+
+This RDS file includes data on the subset of offspring that were succesfully mated at adulthood, which was used to assess how increasing parental age affected offspring reproductive success. This data was used in the analyses on offspring fecundity and hatching success.
+
+This spreadhseet contains informatiomn on the reproductive success of 83 offspring descending from 45 parent pairs. 
+
+#### Key:
+
+-   Column A: **F1_ID** - ID- The unique identifier assigned to each individual offspring.
+
+-   Column B: **mating_date** - date (yyyy-mm-dd) - the date that the mating attempt for the individual offspring was undertaken.
+
+-   Column C: **Totaleggcount** - numeric- The total number of eggs laid by the offspring.
+
+-   Column D: **Totalhatchcount** - numeric - The total number of eggs that were hatched by the individual offspring.
+
+-   Column E: **Include_in_total** - Y/N - Flag dictates whether the offspring had complete lifespan data recorded.
+  All offspring included had accurately recorded death dates.
+
+- Column F: **Temp** - Category - The temperature treatment that parent pairs were moved to following their first mating attempt.
+  Parents' were assigned to be maintained under one of the three following temperature treatments for the full duration of the study: 25.5°C, 28.0°C, or 30.5°C.
+
+-   Column G: **Timepoint** - numeric - The numeric identifer given to each of the parents mating attempts.
+  We only mated offspring descending from either timepoints 1&2 (later classed as descending from young parents) or from timepoints 5 - 8 (later classed as descending from old parents).
+
+-   Column H: **F0_timepoint_binned** - category- A grouping variable that broadly classes offspring from descending either "early" or "late" from within their parents life. "Early" offspring descend from timepoints 1&2, while "late" offspring descend from timepoints 5-8. 
+
+-   Column I: **F1_hatch** - date (yyyy-mm-dd) - The date that the individual offspring hatched.
+
+-   Column J: **F1_Adult_emergence** - date(yyyy-mm-dd) - the date that the individual offspring reached adulthood.
+  
+-   Column K: **F1_death_date** - date(yyyy-mm-dd)- The date when the individual offspring was observed dead. 
+
+-   Column L: **F1_adultmass** - grams - The weight of the offspring (in grams), measured at least 24 hours after we first observed adult emergence.
+  
+-   Column M: **PairID** - ID - The combined unique identifier given to a pair of parents.
+  All parents were mated with the same partner for the full duration of the study.
+
+-   Column N: **Maternal_grandfather_ID** - ID - The unique identifier given to the offsprings maternal grandfather.
+
+-   Column O: **Maternal_grandmother_ID** - ID - The unique identifier given to the offsprings maternal grandmother.
+
+-   Column P: **Paternal_grandmother_ID** - ID - The unique identifier given to the offsprings paternal grandfather.
+
+-   Column Q: **Paternal_grandfather_ID** - ID - The unique identifier given to the offsprings paternal grandmother.
+
+------------------------------------------------------------------------
+
+### RDS FILE 3: F0_final_data_08012026.RDS
+
+This RDS file includes the information on the survival and removal times of individual parent animals from the study. This data was used in an exploratory analysis looking at the impact of the temperature treatments on the parents survival. Since parent animals were removed from the study from either reproductive senescence or death, it was difficult to create models that explcilty tested whether temperature affected parent longevity. Hence, this data was used more for a visual assesment on how temperature treatments affected parental survival.
+
+Includes information on the survival and removal times of all 156 parent animals (that form the 78 parent pairs).
+
+#### Key:
+
+-   Column A: **Cricket_ID** - ID - The unique identifier assigned to each parent animal.
+
+-   Column B: **mateID** - ID- The unique identifier given to the partner of the individual parent animal.
+
+-   Column C: **PairID** - ID - The unique identifier given to the pair of parent animals. 
+
+
