@@ -1,7 +1,7 @@
 ---
 # **Datasets for the paper:** "*Parental age accelerates offspring pace-of-life*"
 
-This folder contains the data that was collected and analysed in the project investigating parental age effects 
+This folder contains the data that was collected and analysed as part of a project investigating parental age effects 
 on offspring life-history traits.
 
 ------------------------------------------------------------------------
