@@ -1,2 +1,1 @@
-#Scripts folder
-This folder contains the R scripts used to analyse the data for the parental age project.
+This folder contains the R scripts used to analyse the data for the parental age project. We used two different Bayesian modelling approaches within this project. First, we assesed the mean offspring trait values with brms models, while mortality parameters (i.e., c, b0 and b1) were assessed across both the offspring's total and adult lifespan using the BaSTA package.
