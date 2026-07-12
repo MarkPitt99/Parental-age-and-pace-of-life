@@ -21,7 +21,7 @@ The data from this project is contained in three seperate RDS files.
 
 ### RDS FILE 1: F1_filtered_data06022025.RDS
 
-This sheet contains all the necessary information required to model the following life-history traits in the offspring:
+This sheet contains all the necessary information required to model the following offspring life-history traits:
 early-life survival (i.e., first month survival), juvenile survival (i.e., survival from the first month to adulthood), 
 total lifespan (i.e., survival from birth until death), development time (time between birth and adult emergence), adult lifespan (i.e., survival from adult emergence until death), 
 and adult mass (in grams). This data was also used to create the data sheets required for the BaSTA analysis on the offspring's mortality parameters(see: 000_ BaSTA_data_organisation.R in scripts). This data sheet also includes additional information on the parent's identity and age at the time of mating, alongisde flags indicating which trait analyses individual offspring could be included within.
