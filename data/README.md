@@ -165,6 +165,39 @@ Includes information on the survival and removal times of all 156 parent animals
 
 -   Column B: **mateID** - ID- The unique identifier given to the partner of the individual parent animal.
 
--   Column C: **PairID** - ID - The unique identifier given to the pair of parent animals. 
+-   Column C: **PairID** - ID - The unique identifier given to the pair of parent animals.
 
+-   Column D: **Hatch_Date** - date (yyyy-mm-dd) - The date that the parent animal hatched.
+
+-   Column E: **Adult_date** - date(yyyy-mm-dd) - The date that the parent animal reached adulthood.
+
+-   Column F: **death_date** -date(yyyy-mm-dd) - The observed date of death for the parent animal.
+
+-   Column G: **Temperature_treatment** - Category- The temperature treatment that parent pairs were moved to following their first mating attempt.
+  Parents' were assigned to be maintained under one of the three following temperature treatments for the full duration of the study: 25.5°C, 28.0°C, or 30.5°C.
+
+-   Column H: **Mass** - numeric (grams) - The mass of the parent animal as measured 24 hours after adult emergence.
+
+-   Column I: **Mother_ID** - ID - The unique identifer given to the mother of the parent animal.
+ 
+-   Column J: **Father_ID** - ID - The unique identifer given to the father of the parent animal.
+
+-   Column K: **Sex** - M/F - The sex of the parent animal. Either Male (M) or Female (F).
+
+-   Column L: **climate_date** - date(yyyy-mm-dd) - The date that the parent animal was moved from their temperature treatment to the climate room (with a set temperature of 28.5 celsius), which occured either due to reproductive cessation (where the parent animal no longer produced viable eggs) or due to the end of the study period (> timepoint 8). Animals that died during the experimental period were given a value of NA.
+
+-   Column M: **Parents_First_mating_date** - date (yyyy-mm-dd) - The date of the parents first mating attempt.
+
+-   Column N: **age_at_first_mating**  - numeric  (in weeks) - The exact age of the parent animal at their **first** mating attempt (i.e., timepoint 1).
+
+-   Column O: **time_in_incubator** - numeric (in weeks) - The total duration each animal spent in the incubator before being moved to the climate room. Individuals are given a value of NA if they died within the experimental period at their set temperature treatment.
+
+-   Column P: **lifespan** - numeric (in weeks) - The total time between entering their experimental temperature treatment and their death date (i.e, the difference between the parents first mating date and their death date).
+
+-   Column Q: **Removal_date** - date(yyyy-mm-dd) - This column combines the dates for animals that were removed to the climate room and those that were removed due to dying within the experimental period. This column combines all removals into one variable, irrespective of ehether that removal was from an observed death or artificially (from reproductive cessation).
+
+-   Column R: **event** - 1/0 - A censoring flag that indicates whether an animal was observed dying within the experimental period or was removed to the climate room. 1 = Animal moved to the climate room. 0 = Animal died within the incubator and did not spend anytime in the climate room.
+
+-   Column S: **time_in_study** - numeric (weeks) - The total duration of time that a parent animal spent within the study before either dying or being experimentally removed. Calculated as the difference between the first mating date and the removal date.
+-   
 
