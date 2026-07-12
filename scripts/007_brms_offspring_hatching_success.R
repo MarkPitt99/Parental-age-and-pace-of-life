@@ -137,7 +137,6 @@ pp_check(default_binomial, type ="loo_pit_overlay", ndraws=100)
 default_betabinomial<-brm(Totalhatchcount|trials(Totaleggcount)~
                             F0_timepoint_binned+
                             Temp+
-                            max_attempt_round+
                             (1|PairID),
                           family=beta_binomial(link="logit"),
                           data=eggdata,
