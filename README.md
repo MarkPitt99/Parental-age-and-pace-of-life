@@ -1,5 +1,7 @@
 # Parental-age-and-pace-of-life
+
 This repository contains the materials (data and code) used in a project assessing how increasing parental age affects offspring longevity, mortality, and other life-history traits in Gryllus bimaculatus.
+
 ------------------------------------------------------------------------
 
 Mark D. Pitt, Brendan O’Connor, Timothy D. Sheen, Davide M. Dominoni, Tom Tregenza, Jelle J. Boonekamp **Parental age at reproduction accelerates offspring pace of life**. *bioRxiv*. [DOI:10.64898/2026.04.14.718189](https://www.biorxiv.org/content/10.64898/2026.04.14.718189v2.full)
