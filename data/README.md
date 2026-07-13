@@ -15,7 +15,7 @@ For any further information, please contact: Mark Pitt, email: [markdavidpitt\@g
 
 ## Description of data:
 
-The data from this project is contained in three seperate RDS files. Additionally, the xlsx file attached contains information on the pronotum widths, lengths, and weights of a subset of animals that had size measurements recorded from the photographs.
+The data from this project is contained in three seperate RDS files. Additionally, the xlsx file attached contains information on the pronotum widths, lengths, and weights of a subset of animals that had size measurements (for the script testing correlations between traits) recorded from the photographs.
 
 ------------------------------------------------------------------------
 
@@ -199,5 +199,5 @@ Includes information on the survival and removal times of all 156 parent animals
 -   Column R: **event** - 1/0 - A censoring flag that indicates whether an animal was observed dying within the experimental period or was removed to the climate room. 1 = Animal moved to the climate room. 0 = Animal died within the incubator and did not spend any time in the climate room.
 
 -   Column S: **time_in_study** - numeric (weeks) - The total duration of time that a parent animal spent within the study before either dying or being experimentally removed. Calculated as the difference between the first mating date and the removal date.
--   
+
 
