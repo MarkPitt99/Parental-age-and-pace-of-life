@@ -11,7 +11,7 @@ Mark D. Pitt, Brendan O’Connor, Timothy D. Sheen, Davide M. Dominoni, Tom Treg
 For any further information, please contact: Mark Pitt, email: [markdavidpitt\@gmail.com](mailto:markdavidpitt@gmail.com)
 
 **Code**:
-The R code used is available in  [`scripts`](https://github.com/MarkPitt99/R-script-for-clutch-size-paper/tree/main/scripts). Scripts are numbered in order of where they appear in the manuscript. Each script contains a small description to the section of the manuscript to which it is relevant. The R version used for this project was 4.3.3
+The R code used is available in  [`scripts`](https://github.com/MarkPitt99/Parental-age-and-pace-of-life/tree/main/scripts). Scripts are numbered in order of where they appear in the manuscript. Each script contains a small description to the section of the manuscript to which it is relevant. The R version used for this project was 4.3.3
 
 **Folders**:
 [`data`](https://github.com/MarkPitt99/R-script-for-clutch-size-paper/tree/main/data): contains the data files and a metadata file describing what each column in the dataset represents: 
