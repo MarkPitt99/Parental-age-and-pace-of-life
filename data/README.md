@@ -15,7 +15,7 @@ For any further information, please contact: Mark Pitt, email: [markdavidpitt\@g
 
 ## Description of data:
 
-The data from this project is contained in three seperate RDS files. Additionally, the xlsx file attached contains information on the pronotum widths, lengths, and weights of a subset of animals that had size measurements (for the script testing correlations between traits) recorded from the photographs.
+The data from this project is contained in three seperate .RDS files. Additionally, the .xlsx file attached contains information on the pronotum widths, lengths, and weights of a subset of animals that had size measurements (for the script testing correlations between traits) recorded from the photographs.
 
 ------------------------------------------------------------------------
 
@@ -26,7 +26,7 @@ The spreadsheet contains life-history data from 1317 offspring from 78 parent pa
 This RDS file contains all the necessary information to model the following offspring life-history traits:
 early-life survival (i.e., first month survival), juvenile survival (i.e., survival from the first month to adulthood), 
 total lifespan (i.e., survival from birth until death), development time (time between birth and adult emergence), adult lifespan (i.e., survival from adult emergence until death), 
-and adult mass (in grams). This file was also used to create the data sheets required for the BaSTA analysis on the offspring's mortality parameters (see: ['000_ BaSTA_data_organisation.R'](https://github.com/MarkPitt99/Parental-age-and-pace-of-life/blob/main/scripts/000_BaSTA_data_organisation.R) in ['scripts']).
+and adult mass (in grams). This file was also used to create the data sheets required for the BaSTA analysis on the offspring's mortality parameters (see: ['000_ BaSTA_data_organisation.R'](https://github.com/MarkPitt99/Parental-age-and-pace-of-life/blob/main/scripts/000_BaSTA_data_organisation.R) in ['scripts'](https://github.com/MarkPitt99/Parental-age-and-pace-of-life/tree/main/scripts).
 
 #### Key:
 
