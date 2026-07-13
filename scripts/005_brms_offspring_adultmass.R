@@ -127,17 +127,6 @@ sum_by_deltaage <- data1 %>%
     n_offspring = n(),
     n_parents   = n_distinct(PairID)
   )
-
-## Mean F1 mass by maternal body mass bin ------------------------------------
-sum_by_mommass <- data1 %>%
-  group_by(Mother_bodymass_bins) %>%
-  summarise(
-    F1_mass   = mean(F1_adultmass),
-    se_total  = sd(F1_adultmass),
-    n_animals = n(),
-    n_parents = n_distinct(PairID)
-  )
-
 ## Collinearity checks --------------------------------------------------------
 X <- model.matrix(
   ~ avg.age + delta.age + Mother_bodymass_scaled + Temp + F1_sex,
