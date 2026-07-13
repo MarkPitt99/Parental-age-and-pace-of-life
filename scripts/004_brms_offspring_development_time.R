@@ -254,7 +254,6 @@ LOO_allsurvivalmodels<-readRDS("scripts/model_outputs/Offspring Trait Models/dev
 #Adding the quadratic delta age term into the model
 mod1.1_quadraticage<-brm(development_time_weeks|cens(1-event)~
                            avg_age+
-                           delta.age +
                            poly(delta.age,2)+
                            Temp+
                            F1_sex+
@@ -310,7 +309,6 @@ pp_check(mod1.1_randomslopes, type ="loo_pit_overlay", ndraws=100)
 #where population level slope is a quadratic function (but assumes all females share the same quadratic trajectory)
 mod1.1_qudratic_randomslopes<-brm(development_time_weeks|cens(1-event)~
                                     avg_age+ 
-                                    delta.age +
                                     poly(delta.age,2)+
                                     Temp + 
                                     F1_sex + 
