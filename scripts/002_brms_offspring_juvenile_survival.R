@@ -325,20 +325,6 @@ moderate_prior_model <- readRDS(
 moderate_prior_ppc <- pp_check(moderate_prior_model, ndraws = 100) +
   xlim(-0.5, 1.5) + theme_classic()
 
-## Save prior predictive comparison panel ------------------------------------
-priorppc_panel <- ggarrange(
-  diffuse_prior_ppc, weak_prior_ppc, moderate_prior_ppc,
-  nrow = 1, ncol = 3,
-  labels = c("A (Diffuse)", "B (Weak)", "C (Moderate)")
-)
-ggsave(
-  filename = "./bayesian_plots/model fit plots/adult surv/priorppc_panel.png",
-  plot     = priorppc_panel,
-  device   = "png", dpi = 300,
-  width = 380, height = 140, units = "mm"
-)
-
-
 # ===========================================================================
 # 7.POSTERIOR DRAWS-----------------------------------------------------------
 # ===========================================================================
@@ -423,6 +409,24 @@ modelpriors_compare <- loo_compare(loomodweak, loodiffuse,
 print(modelpriors_compare, simplify = FALSE)
 saveRDS(modelpriors_compare,
         file = "scripts/model_outputs/Offspring Trait Models/adult surv/modelpriors_compare.rda")
+
+# ===========================================================================
+# PRIOR vs. POSTERIOR SENSITIVITY PLOTS-----------------------------------
+# ===========================================================================
+## Combined prior–posterior panel ---------------------------------------------
+priorpost_panel <- ggarrange(
+  diffuse_prior_ppc , weak_prior_ppc, moderate_prior_ppc,
+  diffuse_prior_pdf,     weak_prior_pdf,     moderate_prior_pdf,
+  nrow = 2, ncol = 3,
+  labels = c("A", "B", "C", "D", "E", "F")
+)
+
+ggsave("./bayesian_plots/model fit plots/adult surv/priorvpost_pdf.png",
+       plot   = priorpost_panel,
+       device = "png",
+       dpi    = 300,
+       width  = 290, height = 140, units = "mm")
+
 
 # ===========================================================================
 # 9. SELECTED MODEL DIAGNOSTICS  (mod1.1_weakpriors)-------------------------
