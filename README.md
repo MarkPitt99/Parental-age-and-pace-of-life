@@ -16,3 +16,5 @@ The R code used is available in  [`scripts`](https://github.com/MarkPitt99/Paren
 **Folders**:
 [`data`](https://github.com/MarkPitt99/Parental-age-and-pace-of-life/tree/main/data): contains the data files and a metadata file describing what each column in the dataset represents: 
 * [`README_data.md`](https://github.com/MarkPitt99/Parental-age-and-pace-of-life/blob/main/data/README.md): The metadata file with descriptions of each of the terms used in the main datasets.
+
+[`Figures`](https://github.com/MarkPitt99/Parental-age-and-pace-of-life/tree/main/Figures): Contains all the figures that appear in the main manuscript (saved in the *main manuscript figures* folder) and those that appear in the supplementary materials (in the *supplementary figures* folder). Additionally, for the *brms* models on the offspring life-history traits, we provide figures that compare the prior (shown in green on the top row) and posterior draws (shown in pink on the bottom row) of different models. Additionally, we provide figures that summarise the model diagnostics (including posterior means, densities, LOO QQ and uniformity plots etc.). 
