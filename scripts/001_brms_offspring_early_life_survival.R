@@ -824,7 +824,6 @@ ggsave("./bayesian_plots/offspring trait plots/F1 early life survival/001_early_
 newdat_pdf <- expand.grid(
   avg_age                   = mean(F1data$avg_age),
   delta.age                 = c(-1.95, 0, 1.85),
-  mothers_age_at_entry_scaled = 0,
   Temp                      = unique(F1data$Temp),
   PairID                    = unique(F1data$PairID)[1]
 )
