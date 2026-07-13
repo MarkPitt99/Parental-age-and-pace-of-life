@@ -15,7 +15,7 @@ For any further information, please contact: Mark Pitt, email: [markdavidpitt\@g
 
 ## Description of data:
 
-The data from this project is contained in three seperate RDS files.
+The data from this project is contained in three seperate RDS files. Additionally, the xlsx file attached contains information on the pronotum widths, lengths, and weights of a subset of animals that had size measurements recorded from the photographs.
 
 ------------------------------------------------------------------------
 
@@ -36,7 +36,7 @@ and adult mass (in grams). This file was also used to create the data sheets req
   All offspring included had accurately recorded death dates.
   
 -   Column C: **Include_in_adult** - Y/N - Dictates whether an individual offspring had accurately recorded adult emergence dates.
-  If **N**, then the offspring could not be included in the analysis of any adult traits (i.e., adult mass, adult lifespan, development time, reproductive success)
+  If **N**, then the offspring could not be included in the analysis of any adult traits (i.e., adult mass, adult lifespan, development time, reproductive success). Eight F1 animals had unreliably recorded adult emergence dates, and were removed form the adult trait analyses.
 
 -   Column D: **Mother_ID** - ID - The unique identifier assigned to each individual mother. 
 
@@ -196,7 +196,7 @@ Includes information on the survival and removal times of all 156 parent animals
 
 -   Column Q: **Removal_date** - date(yyyy-mm-dd) - This column combines the dates for animals that were removed to the climate room and those that were removed due to dying within the experimental period. This column combines all removals into one variable, irrespective of ehether that removal was from an observed death or artificially (from reproductive cessation).
 
--   Column R: **event** - 1/0 - A censoring flag that indicates whether an animal was observed dying within the experimental period or was removed to the climate room. 1 = Animal moved to the climate room. 0 = Animal died within the incubator and did not spend anytime in the climate room.
+-   Column R: **event** - 1/0 - A censoring flag that indicates whether an animal was observed dying within the experimental period or was removed to the climate room. 1 = Animal moved to the climate room. 0 = Animal died within the incubator and did not spend any time in the climate room.
 
 -   Column S: **time_in_study** - numeric (weeks) - The total duration of time that a parent animal spent within the study before either dying or being experimentally removed. Calculated as the difference between the first mating date and the removal date.
 -   
