@@ -1238,7 +1238,7 @@ df_predict_within<-expand.grid(
 
 
 #calculating model predictions and extracting standard errors
-pred_within <- fitted(mod1.1_weakpriors, df_predict_within, re_formula=NA) #NA generates estimates for "new" group levels (so not over your individuals, that is set by NULL)
+pred_within <- fitted(mod1.1_weakpriors, df_predict_within, re_formula=NA)
 pred_within<-as.data.frame(pred_within)
 df_predict_within$prediction <- pred_within$Estimate
 df_predict_within$lower <- pred_within$Q2.5
