@@ -6,7 +6,7 @@ on offspring life-history traits.
 
 ------------------------------------------------------------------------
 
-Mark D. Pitt, Brendan O’Connor, Timothy D. Sheen, Davide M. Dominoni, Tom Tregenza, Jelle J. Boonekamp **Parental age at reproduction accelerates offspring pace of life**. 
+Mark D. Pitt, Brendan O’Connor, Timothy D. Sheen, Davide M. Dominoni, Tom Tregenza, Jelle J. Boonekamp. **Parental age at reproduction accelerates offspring pace of life**. 
 *bioRxiv*. [DOI:10.64898/2026.04.14.718189](https://www.biorxiv.org/content/10.64898/2026.04.14.718189v2.full)
 
 ------------------------------------------------------------------------
