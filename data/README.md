@@ -28,6 +28,8 @@ early-life survival (i.e., first month survival), juvenile survival (i.e., survi
 total lifespan (i.e., survival from birth until death), development time (time between birth and adult emergence), adult lifespan (i.e., survival from adult emergence until death), 
 and adult mass (in grams). This file was also used to create the data sheets required for the BaSTA analysis on the offspring's mortality parameters (see: ['000_ BaSTA_data_organisation.R'](https://github.com/MarkPitt99/Parental-age-and-pace-of-life/blob/main/scripts/000_BaSTA_data_organisation.R) in ['scripts'](https://github.com/MarkPitt99/Parental-age-and-pace-of-life/tree/main/scripts)).
 
+All continuous predictors (i.e., *within_subject_age*, *avg.age* & *mothers_adult_mass*) were z-scaled prior to model specification (z-transformations took place in each trait script).
+
 #### Key:
 
 -   Column A: **F1_ID** - ID- *The unique identifier assigned to each individual offspring.*
