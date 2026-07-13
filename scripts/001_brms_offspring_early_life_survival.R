@@ -938,7 +938,6 @@ saveRDS(early_life_surv_SMD,
 
 
 #Creating a table to export------------------------------------------------------------------------------
-#For the subset of animals that we know became adults
 
 # ── helper ────────────────────────────────────────────────────────────────────
 #Model draws from selected models
