@@ -714,7 +714,7 @@ fit_plots <- ggarrange(
   labels = c("A", "B", "C", "D", "E", "F")
 )
 
-ggsave("./bayesian_plots/model fit plots/total lifespan/selectedmodelfit.png",
+ggsave("./bayesian_plots/model fit plots/adult lifespan/selectedmodelfit.png",
        plot   = fit_plots,
        device = "png",
        width  = 500, height = 400, units = "mm")
