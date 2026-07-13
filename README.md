@@ -15,5 +15,4 @@ The R code used is available in  [`scripts`](https://github.com/MarkPitt99/Paren
 
 **Folders**:
 [`data`](https://github.com/MarkPitt99/Parental-age-and-pace-of-life/tree/main/data): contains the data files and a metadata file describing what each column in the dataset represents: 
-* [`Pitt_et_all_database.xlsx`](https://github.com/MarkPitt99/R-script-for-clutch-size-paper/blob/main/data/Pitt_et_all_database.xlsx): Dataset with information on the biometrics of blue tit eggs, nestlings and adults, alongside information on breeding success and individual survival.
-* [`README_data.md`](https://github.com/MarkPitt99/R-script-for-clutch-size-paper/blob/main/data/README_data.md): Metadata file with descriptions of the terms used in the dataset
+* [`README_data.md`](https://github.com/MarkPitt99/Parental-age-and-pace-of-life/blob/main/data/README.md): The metadata file with descriptions of each of the terms used in the main datasets.
