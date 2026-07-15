@@ -701,7 +701,7 @@ ggsave("./bayesian_plots/model fit plots/adult mass/priorvpost_ecdf.png",
 #Asks whether any temperature dependent parental age effects are conditional on offspring sex
 mod2.1 <- brm(
   bf(F1_adultmass ~ avg_age + delta.age + Temp + Mother_bodymass_scaled +
-       F1_sex + F1_sex*F1_delta.age*Temp + (1 + delta.age | PairID),
+       F1_sex + F1_sex*delta.age*Temp + (1 + delta.age | PairID),
      sigma ~ delta.age),
   family  = gaussian,
   data    = data1,
