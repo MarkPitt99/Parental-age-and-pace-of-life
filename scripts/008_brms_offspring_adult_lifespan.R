@@ -188,7 +188,6 @@ default_lognormal<-brm(adult_lifespan|cens(1-event)~
                          avg.age+
                          delta.age+
                          F1_sex+
-                         mothers_age_at_entry_scaled+ 
                          Temp+
                          (1|PairID),
                        family=lognormal(),
